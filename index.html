@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>武汉亨得利钟表店 | 专业手表维修保养 | 始于1924年</title>
+  <meta name="description" content="武汉亨得利钟表店，始于1924年。专业提供手表维修、保养、电池更换、表带定制、美容翻新等服务。中南店/武广店连锁经营">
+  <meta name="keywords" content="武汉手表维修,武汉手表保养,武汉亨得利,武汉名表维修,武汉机械表维修,武汉石英表电池更换">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; }
+    .header { background: #003366; color: white; padding: 20px; position: sticky; top: 0; z-index: 100; }
+    .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .header h1 { font-size: 24px; }
+    .header p { font-size: 12px; opacity: 0.8; }
+    .nav { background: #002244; padding: 12px 20px; display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+    .nav a { color: white; text-decoration: none; font-size: 14px; opacity: 0.9; }
+    .nav a:hover { opacity: 1; }
+    .hero { background: linear-gradient(135deg, #003366, #004488); color: white; padding: 60px 20px; }
+    .hero-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .hero h2 { font-size: 40px; margin-bottom: 20px; }
+    .hero p { font-size: 18px; opacity: 0.9; margin-bottom: 30px; }
+    .hero-btn { display: inline-block; background: white; color: #003366; padding: 12px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; }
+    .contact-card { background: white; color: #333; border-radius: 12px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+    .contact-card h3 { color: #003366; margin-bottom: 16px; font-size: 18px; }
+    .contact-item { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; font-size: 14px; }
+    .section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+    .section-title { text-align: center; font-size: 28px; color: #003366; margin-bottom: 8px; }
+    .section-subtitle { text-align: center; color: #666; margin-bottom: 40px; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
+    .service-card { border: 2px solid #eee; border-radius: 12px; padding: 24px; text-align: center; }
+    .service-card h3 { color: #003366; margin-bottom: 8px; }
+    .service-card p { color: #666; font-size: 14px; }
+    .about { background: #003366; color: white; padding: 60px 20px; }
+    .about-content { max-width: 1200px; margin: 0 auto; }
+    .about h2 { font-size: 28px; margin-bottom: 20px; }
+    .about p { opacity: 0.9; line-height: 1.8; margin-bottom: 16px; }
+    .about-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 30px; }
+    .about-box { background: rgba(255,255,255,0.1); padding: 24px; border-radius: 12px; }
+    .about-box h3 { margin-bottom: 16px; }
+    .about-box ul { list-style: none; }
+    .about-box li { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; opacity: 0.9; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+    .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+    .blog { background: #f9f9f9; padding: 60px 20px; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+    .blog-card { background: white; border-radius: 12px; padding: 24px; border: 1px solid #eee; }
+    .blog-card h3 { color: #003366; margin-bottom: 12px; }
+    .blog-card p { color: #666; font-size: 14px; margin-bottom: 12px; }
+    .blog-tag { display: inline-block; background: #003366; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; }
+    .footer { background: #002244; color: white; text-align: center; padding: 30px 20px; }
+    @media (max-width: 768px) {
+      .hero-content { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div>
+        <h1>武汉亨得利钟表店</h1>
+        <p>始于1924年 · 百年传承</p>
+      </div>
+    </div>
+  </header>
+  <nav class="nav">
+    <a href="#home">首页</a>
+    <a href="#services">服务项目</a>
+    <a href="#about">关于我们</a>
+    <a href="#gallery">图片库</a>
+    <a href="#blog">维修案例</a>
+    <a href="#contact">联系我们</a>
+  </nav>
+  
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div>
+        <h2>百年传承 · 匠心服务</h2>
+        <p>专业手表维修保养 | 价格透明 | 非人为因素保修一年</p>
+        <a href="#contact" class="hero-btn">立即咨询</a>
+      </div>
+      <div class="contact-card" id="contact">
+        <h3>联系我们</h3>
+        <div style="margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #eee;">
+          <strong style="color:#003366;">中南店</strong>
+          <div class="contact-item">📍 武珞路548号思特大厦一楼</div>
+          <div class="contact-item">📞 13307108606</div>
+          <div class="contact-item">🕐 9:30 -- 20:00</div>
+        </div>
+        <div>
+          <strong style="color:#003366;">武广店</strong>
+          <div class="contact-item">📍 解放大道688号武商广场写字楼13楼</div>
+          <div class="contact-item">📞 18627149582</div>
+          <div class="contact-item">🕐 10:00 -- 17:00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section" id="services">
+    <h2 class="section-title">服务项目</h2>
+    <p class="section-subtitle">全方位手表售后服务</p>
+    <div class="services">
+      <div class="service-card"><h3>🔧 手表维修</h3><p>机械表、石英表等故障维修</p></div>
+      <div class="service-card"><h3>✨ 保养清洗</h3><p>专业清洗保养</p></div>
+      <div class="service-card"><h3>🔋 电池更换</h3><p>原厂电池</p></div>
+      <div class="service-card"><h3>⌚ 表带定制</h3><p>皮质、金属表带</p></div>
+      <div class="service-card"><h3>💎 美容翻新</h3><p>抛光、划痕修复</p></div>
+      <div class="service-card"><h3>🛡️ 真伪鉴定</h3><p>专业名表鉴定</p></div>
+    </div>
+  </section>
+  
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>关于亨得利</h2>
+      <p>始于1924年。原国营武汉亨得利钟表商店，全国两亨协会（亨得利、亨达利）副会长单位。</p>
+      <p>百年老店，本分经营。不夸大故障、不收取额外费用，诚实报价，诚信维修。</p>
+      <div class="about-grid">
+        <div class="about-box">
+          <h3>我们的优势</h3>
+          <ul>
+            <li>✅ 百年老店，经验丰富</li>
+            <li>✅ 价格透明，先报价后维修</li>
+            <li>✅ 非人为因素保修一年</li>
+            <li>✅ 如实诊断，不夸大故障</li>
+          </ul>
+        </div>
+        <div class="about-box">
+          <h3>门店信息</h3>
+          <ul>
+            <li>中南店：13307108606</li>
+            <li>武广店：18627149582</li>
+            <li>微信同号，欢迎咨询</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section" id="gallery">
+    <h2 class="section-title">图片库</h2>
+    <p class="section-subtitle">真实维修案例，每一张都是细节</p>
+    <div class="gallery">
+      <img src="gallery/1.jpg" alt="维修案例">
+      <img src="gallery/1e42203fead083b8e890ff63e876ab17.jpg" alt="维修案例">
+      <img src="gallery/2.jpg" alt="维修案例">
+      <img src="gallery/4.jpg" alt="维修案例">
+      <img src="gallery/5.jpg" alt="维修案例">
+      <img src="gallery/6.jpg" alt="维修案例">
+      <img src="gallery/7.jpg" alt="维修案例">
+      <img src="gallery/8.jpg" alt="维修案例">
+      <img src="gallery/bab81c6112488b254d41689aac02b2cc.jpg" alt="维修案例">
+      <img src="gallery/中南店.jpg" alt="维修案例">
+      <img src="gallery/卡地亚洗油保养抛光.jpg" alt="维修案例">
+      <img src="gallery/店铺环境.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20230607145418.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231122172003.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123162827.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123162906.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163244.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163245.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163246.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163247.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163248.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163249.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163250.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163251.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163253.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163628.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163718.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163719.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163720.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163721.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163903.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163925.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163941.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123163955.jpg" alt="维修案例">
+      <img src="gallery/微信图片_20231123164001.jpg" alt="维修案例">
+      <img src="gallery/武广店.jpg" alt="维修案例">
+    </div>
+  </section>
+  
+  <section class="blog" id="blog">
+    <h2 class="section-title">维修案例</h2>
+    <p class="section-subtitle">手表保养维修知识</p>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <span class="blog-tag">维修案例</span>
+        <h3>豪力时进水生锈，一周恢复出厂级状态</h3>
+        <p>这块豪力时送来的时候，表壳内侧全是锈迹。全流程修复：全拆解、除锈处理、洗油保养...</p>
+      </div>
+      <div class="blog-card">
+        <span class="blog-tag">保养知识</span>
+        <h3>机械表多久保养一次？</h3>
+        <p>机械表一般建议3-5年进行一次全面保养，包括清洗、加油、调校等...</p>
+      </div>
+      <div class="blog-card">
+        <span class="blog-tag">故障维修</span>
+        <h3>手表进水了怎么办？</h3>
+        <p>手表进水是常见问题，但很多人处理方法错误，反而加速损坏...</p>
+      </div>
+      <div class="blog-card">
+        <span class="blog-tag">故障维修</span>
+        <h3>机械表走时不准？</h3>
+        <p>机械表走时误差大是常见问题，原因可能是动力不足、受磁、需要保养...</p>
+      </div>
+      <div class="blog-card">
+        <span class="blog-tag">保养知识</span>
+        <h3>手表防水30米能不能游泳？</h3>
+        <p>很多人误解了手表防水等级。30米防水不等于能下30米水深...</p>
+      </div>
+      <div class="blog-card">
+        <span class="blog-tag">品牌维修</span>
+        <h3>武汉劳力士维修哪家好？</h3>
+        <p>劳力士是瑞士名表的代表，机芯精密，维修需要专业技术和经验...</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section" id="contact">
+    <h2 class="section-title">联系我们</h2>
+    <div class="blog-grid" style="margin-top:40px;">
+      <div class="blog-card" style="text-align:center;">
+        <h3 style="color:#003366;">🏪 中南店</h3>
+        <p>📍 武珞路548号思特大厦一楼</p>
+        <p>📞 13307108606</p>
+        <p>🕐 9:30 -- 20:00</p>
+      </div>
+      <div class="blog-card" style="text-align:center;">
+        <h3 style="color:#003366;">🏪 武广店</h3>
+        <p>📍 解放大道688号武商广场写字楼13楼</p>
+        <p>📞 18627149582</p>
+        <p>🕐 10:00 -- 17:00</p>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <p>武汉亨得利钟表店 · 始于1924年</p>
+    <p style="opacity:0.7;margin-top:8px;">专业手表维修保养服务</p>
+  </footer>
+</body>
+</html>
