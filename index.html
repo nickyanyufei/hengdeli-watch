@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>武汉亨得利钟表店 | 专业手表维修保养 | 始于1924年</title>
-  <meta name="description" content="武汉亨得利钟表店，始于1924年。专业提供手表维修、保养、电池更换、表带定制、美容翻新等服务。中南店/武广店连锁经营">
-  <meta name="keywords" content="武汉手表维修,武汉手表保养,武汉亨得利,武汉名表维修,武汉机械表维修,武汉石英表电池更换">
+  <meta name="description" content="武汉亨得利钟表店，始于1924年。专业提供手表维修、保养、电池更换，表带定制、美容翻新等服务。中南店/武广店连锁经营">
+  <meta name="keywords" content="武汉手表维修,武汉手表保养,武汉亨得利,武汉名表维修,武汉机械表维修,武汉石英表电池更换,武汉浪琴保养,武汉劳力士维修,武汉欧米伽售后">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; }
@@ -15,15 +15,20 @@
     .header p { font-size: 12px; opacity: 0.8; }
     .nav { background: #002244; padding: 12px 20px; display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
     .nav a { color: white; text-decoration: none; font-size: 14px; opacity: 0.9; }
-    .nav a:hover { opacity: 1; }
-    .hero { background: linear-gradient(135deg, #003366, #004488); color: white; padding: 60px 20px; }
+    .hero { background: linear-gradient(135deg, #003366, #004488); color: white; padding: 50px 20px; }
     .hero-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-    .hero h2 { font-size: 40px; margin-bottom: 20px; }
-    .hero p { font-size: 18px; opacity: 0.9; margin-bottom: 30px; }
+    .hero-left h2 { font-size: 40px; margin-bottom: 20px; }
+    .hero-left p { font-size: 18px; opacity: 0.9; margin-bottom: 30px; }
     .hero-btn { display: inline-block; background: white; color: #003366; padding: 12px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; }
     .contact-card { background: white; color: #333; border-radius: 12px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
     .contact-card h3 { color: #003366; margin-bottom: 16px; font-size: 18px; }
     .contact-item { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; font-size: 14px; }
+    .qr-section { margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee; }
+    .qr-title { font-size: 12px; color: #666; text-align: center; margin-bottom: 10px; }
+    .qr-grid { display: flex; justify-content: center; gap: 20px; }
+    .qr-item { text-align: center; }
+    .qr-item img { width: 80px; height: 80px; border-radius: 8px; }
+    .qr-item p { font-size: 12px; color: #666; margin-top: 4px; }
     .section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
     .section-title { text-align: center; font-size: 28px; color: #003366; margin-bottom: 8px; }
     .section-subtitle { text-align: center; color: #666; margin-bottom: 40px; }
@@ -75,7 +80,7 @@
   
   <section class="hero" id="home">
     <div class="hero-content">
-      <div>
+      <div class="hero-left">
         <h2>百年传承 · 匠心服务</h2>
         <p>专业手表维修保养 | 价格透明 | 非人为因素保修一年</p>
         <a href="#contact" class="hero-btn">立即咨询</a>
@@ -94,6 +99,19 @@
           <div class="contact-item">📞 18627149582</div>
           <div class="contact-item">🕐 10:00 -- 17:00</div>
         </div>
+        <div class="qr-section">
+          <p class="qr-title">微信扫码咨询</p>
+          <div class="qr-grid">
+            <div class="qr-item">
+              <img src="gallery/中南店.jpg" alt="中南店微信">
+              <p>中南店</p>
+            </div>
+            <div class="qr-item">
+              <img src="gallery/武广店.jpg" alt="武广店微信">
+              <p>武广店</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -102,7 +120,7 @@
     <h2 class="section-title">服务项目</h2>
     <p class="section-subtitle">全方位手表售后服务</p>
     <div class="services">
-      <div class="service-card"><h3>🔧 手表维修</h3><p>机械表、石英表等故障维修</p></div>
+      <div class="service-card"><h3>🔧 手表维修</h3><p>机械表，石英表等故障维修</p></div>
       <div class="service-card"><h3>✨ 保养清洗</h3><p>专业清洗保养</p></div>
       <div class="service-card"><h3>🔋 电池更换</h3><p>原厂电池</p></div>
       <div class="service-card"><h3>⌚ 表带定制</h3><p>皮质、金属表带</p></div>
@@ -215,23 +233,35 @@
         <h3>武汉劳力士维修哪家好？</h3>
         <p>劳力士是瑞士名表的代表，机芯精密，维修需要专业技术和经验...</p>
       </div>
-    </div>
-  </section>
-  
-  <section class="section" id="contact">
-    <h2 class="section-title">联系我们</h2>
-    <div class="blog-grid" style="margin-top:40px;">
-      <div class="blog-card" style="text-align:center;">
-        <h3 style="color:#003366;">🏪 中南店</h3>
-        <p>📍 武珞路548号思特大厦一楼</p>
-        <p>📞 13307108606</p>
-        <p>🕐 9:30 -- 20:00</p>
+      <div class="blog-card">
+        <span class="blog-tag">品牌维修</span>
+        <h3>武汉欧米伽保养去哪？</h3>
+        <p>欧米伽以精准计时闻名全球，海马系列、超霸系列都是经典...</p>
       </div>
-      <div class="blog-card" style="text-align:center;">
-        <h3 style="color:#003366;">🏪 武广店</h3>
-        <p>📍 解放大道688号武商广场写字楼13楼</p>
-        <p>📞 18627149582</p>
-        <p>🕐 10:00 -- 17:00</p>
+      <div class="blog-card">
+        <span class="blog-tag">品牌维修</span>
+        <h3>武汉浪琴维修保养</h3>
+        <p>浪琴是瑞士入门级奢华腕表的代表，在武汉拥有大量用户...</p>
+      </div>
+      <div class="blog-card">
+        <span class="blog-tag">品牌维修</span>
+        <h3>武汉天梭维修</h3>
+        <p>天梭是瑞士亲民品牌，在国内销量很高。电池寿命一般2-3年...</p>
+      </div>
+      <div class="blog-card">
+        <span class="blog-tag">品牌维修</span>
+        <h3>武汉帝舵维修</h3>
+        <p>帝舵是劳力士的子品牌，被誉为"小劳力士"。维修需要专业设备...</p>
+      </div>
+      <div class="blog-card">
+        <span class="blog-tag">品牌维修</span>
+        <h3>武汉卡地亚维修</h3>
+        <p>卡地亚是法国皇室珠宝品牌，蓝气球系列更是经典...</p>
+      </div>
+      <div class="blog-card">
+        <span class="blog-tag">品牌维修</span>
+        <h3>武汉积家维修</h3>
+        <p>积家是瑞士顶级制表品牌，以复杂功能著称。维修需要极高技术...</p>
       </div>
     </div>
   </section>
