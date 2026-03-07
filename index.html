@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>武汉亨得利钟表店 | 专业手表维修保养 | 始于1924年</title>
-  <meta name="description" content="武汉亨得利钟表店，始于1924年。专业提供手表维修、保养、电池更换，表带定制、美容翻新等服务。中南店/武广店连锁经营">
+  <meta name="description" content="武汉亨得利钟表店，始于1924年。专业提供手表维修、保养、电池更换、表带定制、美容翻新等服务。中南店/武广店连锁经营">
   <meta name="keywords" content="武汉手表维修,武汉手表保养,武汉亨得利,武汉名表维修,武汉机械表维修,武汉石英表电池更换,武汉浪琴保养,武汉劳力士维修,武汉欧米伽售后">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -15,11 +15,12 @@
     .header p { font-size: 12px; opacity: 0.8; }
     .nav { background: #002244; padding: 12px 20px; display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
     .nav a { color: white; text-decoration: none; font-size: 14px; opacity: 0.9; }
+    .nav a:hover { opacity: 1; }
     .hero { background: linear-gradient(135deg, #003366, #004488); color: white; padding: 50px 20px; }
     .hero-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
     .hero-left h2 { font-size: 40px; margin-bottom: 20px; }
     .hero-left p { font-size: 18px; opacity: 0.9; margin-bottom: 30px; }
-    .hero-btn { display: inline-block; background: white; color: #003366; padding: 12px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; }
+    .hero-btn { display: inline-block; background: white; color: #003366; padding: 12px 30px; text-decoration: none; border-radius: -weight: bold;8px; font }
     .contact-card { background: white; color: #333; border-radius: 12px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
     .contact-card h3 { color: #003366; margin-bottom: 16px; font-size: 18px; }
     .contact-item { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; font-size: 14px; }
@@ -47,12 +48,26 @@
     .about-box li { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; opacity: 0.9; }
     .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
     .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+    .video-section { background: #f5f5f5; padding: 60px 20px; }
+    .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+    .video-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .video-card video { width: 100%; height: 200px; object-fit: cover; }
+    .video-card-content { padding: 16px; }
+    .video-card h3 { color: #003366; font-size: 16px; margin-bottom: 8px; }
     .blog { background: #f9f9f9; padding: 60px 20px; }
     .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
-    .blog-card { background: white; border-radius: 12px; padding: 24px; border: 1px solid #eee; }
+    .blog-card { background: white; border-radius: 12px; padding: 24px; border: 1px solid #eee; cursor: pointer; }
+    .blog-card:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
     .blog-card h3 { color: #003366; margin-bottom: 12px; }
     .blog-card p { color: #666; font-size: 14px; margin-bottom: 12px; }
     .blog-tag { display: inline-block; background: #003366; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto; }
+    .modal.active { display: block; }
+    .modal-content { background: white; max-width: 800px; margin: 50px auto; padding: 30px; border-radius: 12px; }
+    .modal-close { float: right; font-size: 24px; cursor: pointer; }
+    .modal h2 { color: #003366; margin-bottom: 20px; }
+    .modal-body { line-height: 1.8; color: #333; }
+    .modal-body p { margin-bottom: 16px; }
     .footer { background: #002244; color: white; text-align: center; padding: 30px 20px; }
     @media (max-width: 768px) {
       .hero-content { grid-template-columns: 1fr; }
@@ -74,6 +89,7 @@
     <a href="#services">服务项目</a>
     <a href="#about">关于我们</a>
     <a href="#gallery">图片库</a>
+    <a href="#video">视频库</a>
     <a href="#blog">维修案例</a>
     <a href="#contact">联系我们</a>
   </nav>
@@ -104,11 +120,11 @@
           <div class="qr-grid">
             <div class="qr-item">
               <img src="gallery/bab81c6112488b254d41689aac02b2cc.jpg" alt="中南店微信">
-              <p>中南店</p>
+              <p>中南店(蓝色)</p>
             </div>
             <div class="qr-item">
               <img src="gallery/1e42203fead083b8e890ff63e876ab17.jpg" alt="武广店微信">
-              <p>武广店</p>
+              <p>武广店(绿色)</p>
             </div>
           </div>
         </div>
@@ -169,7 +185,7 @@
       <img src="gallery/7.jpg" alt="维修案例">
       <img src="gallery/8.jpg" alt="维修案例">
       <img src="gallery/bab81c6112488b254d41689aac02b2cc.jpg" alt="维修案例">
-      <img src="gallery/bab81c6112488b254d41689aac02b2cc.jpg" alt="维修案例">
+      <img src="gallery/中南店.jpg" alt="维修案例">
       <img src="gallery/卡地亚洗油保养抛光.jpg" alt="维修案例">
       <img src="gallery/店铺环境.jpg" alt="维修案例">
       <img src="gallery/微信图片_20230607145418.jpg" alt="维修案例">
@@ -195,7 +211,38 @@
       <img src="gallery/微信图片_20231123163941.jpg" alt="维修案例">
       <img src="gallery/微信图片_20231123163955.jpg" alt="维修案例">
       <img src="gallery/微信图片_20231123164001.jpg" alt="维修案例">
-      <img src="gallery/1e42203fead083b8e890ff63e876ab17.jpg" alt="维修案例">
+      <img src="gallery/武广店.jpg" alt="维修案例">
+</div>
+  </section>
+  
+  <section class="video-section" id="video">
+    <h2 class="section-title">视频库</h2>
+    <p class="section-subtitle">真实维修案例视频</p>
+    <div class="video-grid">
+      <div class="video-card">
+        <iframe src="//player.bilibili.com/player.html?bvid=BV1dV4y1g7pZ<video src="gallery/劳力士2.mp4" controls></video>page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width:100%;height:200px;"></iframe>
+        <div class="video-card-content">
+          <h3>劳力士维修案例</h3>
+        </div>
+      </div>
+      <div class="video-card">
+        <video src="gallery/劳力士3.mp4" controls></video>
+        <div class="video-card-content">
+          <h3>劳力士维修案例</h3>
+        </div>
+      </div>
+      <div class="video-card">
+        <video src="gallery/劳力士4.mp4" controls></video>
+        <div class="video-card-content">
+          <h3>劳力士维修案例</h3>
+        </div>
+      </div>
+      <div class="video-card">
+        <video src="gallery/劳力士5.mp4" controls></video>
+        <div class="video-card-content">
+          <h3>劳力士维修案例</h3>
+        </div>
+      </div>
     </div>
   </section>
   
@@ -203,62 +250,62 @@
     <h2 class="section-title">维修案例</h2>
     <p class="section-subtitle">手表保养维修知识</p>
     <div class="blog-grid">
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case1')">
         <span class="blog-tag">维修案例</span>
         <h3>豪力时进水生锈，一周恢复出厂级状态</h3>
         <p>这块豪力时送来的时候，表壳内侧全是锈迹。全流程修复：全拆解、除锈处理、洗油保养...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case2')">
         <span class="blog-tag">保养知识</span>
         <h3>机械表多久保养一次？</h3>
-        <p>机械表一般建议3-5年进行一次全面保养，包括清洗、加油、调校等...</p>
+        <p>机械表一般建议3-5年进行一次全面保养，包括清洗、加油，调校等...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case3')">
         <span class="blog-tag">故障维修</span>
         <h3>手表进水了怎么办？</h3>
         <p>手表进水是常见问题，但很多人处理方法错误，反而加速损坏...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case4')">
         <span class="blog-tag">故障维修</span>
         <h3>机械表走时不准？</h3>
         <p>机械表走时误差大是常见问题，原因可能是动力不足、受磁、需要保养...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case5')">
         <span class="blog-tag">保养知识</span>
         <h3>手表防水30米能不能游泳？</h3>
         <p>很多人误解了手表防水等级。30米防水不等于能下30米水深...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case6')">
         <span class="blog-tag">品牌维修</span>
         <h3>武汉劳力士维修哪家好？</h3>
         <p>劳力士是瑞士名表的代表，机芯精密，维修需要专业技术和经验...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case7')">
         <span class="blog-tag">品牌维修</span>
         <h3>武汉欧米伽保养去哪？</h3>
         <p>欧米伽以精准计时闻名全球，海马系列、超霸系列都是经典...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case8')">
         <span class="blog-tag">品牌维修</span>
         <h3>武汉浪琴维修保养</h3>
         <p>浪琴是瑞士入门级奢华腕表的代表，在武汉拥有大量用户...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case9')">
         <span class="blog-tag">品牌维修</span>
         <h3>武汉天梭维修</h3>
         <p>天梭是瑞士亲民品牌，在国内销量很高。电池寿命一般2-3年...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case10')">
         <span class="blog-tag">品牌维修</span>
         <h3>武汉帝舵维修</h3>
         <p>帝舵是劳力士的子品牌，被誉为"小劳力士"。维修需要专业设备...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case11')">
         <span class="blog-tag">品牌维修</span>
         <h3>武汉卡地亚维修</h3>
         <p>卡地亚是法国皇室珠宝品牌，蓝气球系列更是经典...</p>
       </div>
-      <div class="blog-card">
+      <div class="blog-card" onclick="showModal('case12')">
         <span class="blog-tag">品牌维修</span>
         <h3>武汉积家维修</h3>
         <p>积家是瑞士顶级制表品牌，以复杂功能著称。维修需要极高技术...</p>
@@ -266,9 +313,47 @@
     </div>
   </section>
   
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  
   <footer class="footer">
     <p>武汉亨得利钟表店 · 始于1924年</p>
     <p style="opacity:0.7;margin-top:8px;">专业手表维修保养服务</p>
   </footer>
+  
+  <script>
+    const articles = {
+      case1: { title: '豪力时进水生锈，一周恢复出厂级状态', content: '这块豪力时送来的时候，表壳内侧全是锈迹。全流程修复：1.全拆解：机芯完全拆散，每个零件单独检查。2.除锈处理：表壳内侧和底盖边缘的锈迹，用专用清洗液配合超声波清洗。3.洗油保养：机芯全拆后，所有齿轮、轴承、游丝逐件清洗。4.校表测试：上校表仪测试走时精度。5.防水测试：确保防水性能完好。' },
+      case2: { title: '机械表多久保养一次？', content: '机械表一般建议3-5年进行一次全面保养。1.使用频率：每天佩戴建议3-5年保养一次。2.使用环境：经常出汗、接触海水要缩短周期。3.机芯类型：入门级3-4年，中高端4-5年。保养包括：外观检查、机芯拆洗、加油润滑、调校测试、防水测试。' },
+      case3: { title: '手表进水了怎么办？', content: '❌ 错误做法：放太阳下晒、放米缸、用吹风机吹、不管它。✅ 正确做法：1.立即停止佩戴，2.用软布擦干表面，3.尽快送修。水会导致游丝生锈、齿轮腐蚀、表盘生锈。记住：手表进水无小事，及时送修是关键。' },
+      case4: { title: '机械表走时不准？', content: '常见原因：1.动力不足：自动表戴得不够久，2.受磁：靠近手机、音响，3.需要保养：润滑油干涸，4.温度影响：温差大，5.碰撞震动：可能导致零件位移。判断标准：误差突然变大、走走停停、一直走快或走慢。' },
+      case5: { title: '手表防水30米能不能游泳？', content: '不能。30米防水只防日常泼溅。防水等级：30米=日常防泼溅，50米=可以游泳，100米以上=可以潜水。注意事项：1.所有防水表都不能防热水，2.防水圈会老化，3.每次开盖都要换新胶圈。' },
+      case6: { title: '武汉劳力士维修哪家好？', content: '劳力士是瑞士名表代表，机芯精密。维修特点：1.机芯结构复杂，2.防水性能优异但每次开盖后需要做防水测试，3.建议5-7年保养一次。武汉亨得利钟表店是武汉老牌维修店，技师经验丰富。' },
+      case7: { title: '武汉欧米伽保养去哪？', content: '欧米伽以精准计时闻名。保养要点：1.机芯特点：同轴擒纵技术，2.防水注意：海马系列防水好但仍需定期检查，3.保养周期4-5年。欧米伽热门系列：海马系列、超霸系列。' },
+      case8: { title: '武汉浪琴维修保养', content: '浪琴是瑞士入门级奢华腕表代表。特点：1.机芯可靠多用ETA统芯，2.常见问题：走时不准、电池问题、防水问题，3.保养周期：机械表3-5年，石英表2-3年。热门系列：名匠、康卡斯、心月、军旗。' },
+      case9: { title: '武汉天梭维修', content: '天梭是瑞士亲民品牌。常见问题：1.石英表电池2-3年，2.机械表3-4年保养，3.防水30-50米。热门系列：力洛克、杜鲁尔、速驰、魅时。' },
+      case10: { title: '武汉帝舵维修', content: '帝舵是劳力士子品牌。特色：1.自产MT机芯稳定性好，2.防水性能好，3.保养周期5年左右。热门系列：碧湾、皇家、经典。' },
+      case11: { title: '武汉卡地亚维修', content: '卡地亚是法国珠宝腕表品牌。特点：1.设计独特标志性蓝宝石表冠，2.机芯多用ETA或自产，3.常见问题：走时不准、把头松动、防水问题。热门系列：蓝气球、坦克、帕莎。' },
+      case12: { title: '武汉积家维修', content: '积家是瑞士顶级制表品牌。特色：1.复杂功能：万年历、陀飞轮、三问报时，2.纯手工打磨工艺，3.保养需要原厂配件和技术。热门系列：大师、约会、翻转。' }
+    };
+    
+    function showModal(id) {
+      const article = articles[id];
+      document.getElementById('modal-body').innerHTML = '<h2>' + article.title + '</h2><div class="modal-body"><p>' + article.content + '</p></div>';
+      document.getElementById('modal').classList.add('active');
+    }
+    
+    function closeModal() {
+      document.getElementById('modal').classList.remove('active');
+    }
+    
+    document.getElementById('modal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+  </script>
 </body>
 </html>
